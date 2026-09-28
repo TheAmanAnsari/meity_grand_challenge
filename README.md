@@ -20,7 +20,7 @@ A reproducible dev container for the challenge: ROS 2 Humble, Gazebo Harmonic, A
 - VS Code with the Dev Containers extension
 - About 15-20 GB free disk space
 - Good internet connection for the first build
-- About 45-60 minutes for the first build (as it compiles ArduPilot and PX4)
+- For the first build it might take couple of minutes to an hour or so (as it compiles ArduPilot and PX4)
 
 ## Setup
 
