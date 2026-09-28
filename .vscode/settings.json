@@ -1,0 +1,14 @@
+{
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/moonlab/vrx_ws/install/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/moonlab/vrx_ws/install/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/moonlab/meity_grand_challenge/src/uavsim/gz_plugins"
+}

@@ -1,0 +1,13 @@
+# VS Code C/C++ extension local database
+.vscode/browse.*
+.vscode/ipch/
+
+# uavsim's compiled gz_plugins
+uavsim/build/
+
+# Python
+__pycache__/
+*.pyc
+
+# General
+.DS_Store
