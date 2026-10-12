@@ -66,21 +66,6 @@ you work. You don't need both.
 
 ### Setup
 
-1. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-   extension in VS Code.
-2. Open the cloned folder in VS Code:
-   ```bash
-   code .
-   ```
-3. Click **Reopen in Container** when prompted (or Command Palette →
-   **Dev Containers: Reopen in Container**).
-4. VS Code pulls the pre-built image and sets up the workspace automatically.
-   This takes a few minutes on the first run (downloading the image), and
-   seconds on every run after that.
-5. Use the integrated terminal inside VS Code for everything from here on.
-
-### Setup (non VS Code)
-
 1. Make the helper scripts executable (one-time):
    ```bash
    chmod +x start_container.sh run_sim.sh stop_sim.sh
@@ -93,6 +78,21 @@ you work. You don't need both.
    workspace — this can take a while depending on your connection. On every run after, it reattaches instantly to the same container.
 3. Run `./start_container.sh` again from a second terminal any time you want
    another shell inside the same environment.
+
+### Setup (VS Code)
+
+1. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+   extension in VS Code.
+2. Open the cloned folder in VS Code:
+   ```bash
+   code .
+   ```
+3. Click **Reopen in Container** when prompted (or Command Palette →
+   **Dev Containers: Reopen in Container**).
+4. VS Code pulls the pre-built image and sets up the workspace automatically.
+   This takes a few minutes on the first run (downloading the image), and
+   seconds on every run after that.
+5. Use the integrated terminal inside VS Code for everything from here on.
 
 ## Running a simulation
 
