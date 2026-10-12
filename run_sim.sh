@@ -2,7 +2,7 @@
 set -e
 
 CONTAINER_NAME="meity_uav_challenge"
-SCENARIO="${1:-scenarios/forest_static.yaml}"
+SCENARIO="${1:-scenarios/forest_rescue.yaml}"
 
 if ! docker container inspect "${CONTAINER_NAME}" >/dev/null 2>&1; then
     echo "Container '${CONTAINER_NAME}' doesn't exist yet."

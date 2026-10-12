@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-IMAGE_NAME="meity-uav-challenge:latest"
+IMAGE_NAME="theamanansari/meity-uav-challenge:latest"
 CONTAINER_NAME="meity_uav_challenge"
 WORKSPACE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 

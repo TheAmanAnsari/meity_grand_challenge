@@ -2,7 +2,7 @@
 set -e
 
 CONTAINER_NAME="meity_uav_challenge"
-SCENARIO="${1:-scenarios/forest_static.yaml}"
+SCENARIO="${1:-scenarios/forest_rescue.yaml}"
 
 if ! docker container inspect "${CONTAINER_NAME}" >/dev/null 2>&1; then
     echo "Container '${CONTAINER_NAME}' doesn't exist. Nothing to stop."
@@ -20,5 +20,5 @@ if ! docker exec "${CONTAINER_NAME}" pgrep -f "gz sim" >/dev/null 2>&1; then
     exit 0
 fi
 
-echo "Stopping scenario: ${SCENARIO}"
+echo "Stopping scenario.. ${SCENARIO}"
 docker exec -it "${CONTAINER_NAME}" bash -c "source /opt/ros/humble/setup.bash && cd uavsim && ./bin/uavsim down ${SCENARIO} --gazebo"

@@ -1,6 +1,6 @@
 {
   "name": "humble desktop",
-  "dockerFile": "Dockerfile",
+  "image": "theamanansari/meity-uav-challenge:latest",
   "runArgs": [
     "--privileged",
     "--network=host",
