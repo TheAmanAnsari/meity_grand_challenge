@@ -19,25 +19,21 @@ stop_sim.sh           stop a scenario
 
 ## Requirements
 
-- Ubuntu 22.04 LTS (other Linux distros may work but aren't officially tested)
+- Ubuntu 22.04 LTS (recommended, tested)
 - Docker Engine, installed and running
-- About 10 GB free disk space (the image is pre-built, so no local compiling
-  is needed)
+- About 10 to 20 GB free disk space
 - An internet connection for the first run, to pull the image
-- X11 (already present on a standard Ubuntu desktop) for the simulator's GUI
 
 ### Installing Docker
 
-If you don't already have Docker Engine installed, the quickest way is
-Docker's official convenience script:
+If you don't already have Docker Engine installed, the quickest way is Docker's official convenience script:
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-Then add your user to the `docker` group, so you don't need `sudo` for every
-Docker command, and log out and back in (or reboot) for it to take effect:
+Then add your user to the `docker` group, so you don't need `sudo` for every Docker command, and log out and back in (or reboot) for it to take effect:
 
 ```bash
 sudo usermod -aG docker $USER
@@ -61,8 +57,7 @@ git clone https://github.com/TheAmanAnsari/meity_grand_challenge.git
 cd meity_grand_challenge
 ```
 
-You can then use either of the two paths below — pick whichever fits how
-you work. You don't need both.
+You can then use either of the two paths below — pick whichever fits how you work. You don't need both.
 
 ### Setup
 
