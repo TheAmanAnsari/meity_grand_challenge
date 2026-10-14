@@ -54,14 +54,13 @@ Follow the guide here https://developer.nvidia.com/nvidia-container-runtime
 
 ## Getting started
 
-Clone this repo first, either way:
+Fork this repository, and perform git clone:
 
 ```bash
-git clone https://github.com/TheAmanAnsari/meity_grand_challenge.git
+git clone https://github.com/[your-username]/meity_grand_challenge.git
 cd meity_grand_challenge
 ```
 
-You can then use either of the two paths below — pick whichever fits how you work. You don't need both.
 
 ### Setup
 
@@ -84,14 +83,12 @@ You can then use either of the two paths below — pick whichever fits how you w
 With the environment up, from your host terminal:
 
 ```bash
-./run_sim.sh                              # default forest_rescue scenario
-./run_sim.sh scenarios/forest_static.yaml # specific scenario
+./run_sim.sh                                    # default scenario (forest_rescue) 
 ```
 
 To stop a running simulation:
 
 ```bash
-./stop_sim.sh                              # default scenario
-./stop_sim.sh scenarios/forest_static.yaml # specific scenario
+./stop_sim.sh                                   # default scenario
 ```
 
