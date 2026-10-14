@@ -103,4 +103,14 @@ RUN git clone -b v2.4.3 https://github.com/eProsima/Micro-XRCE-DDS-Agent.git /ho
     && cmake .. \
     && make -j$(nproc) \
     && sudo make install \
-    && sudo ldconfig /usr/local/lib/
+    && sudo ldconfig /usr/local/lib/  
+
+# dependencies (added later)
+RUN sudo apt update && sudo apt install -y \
+    ros-humble-rosbag2-py \
+    ros-humble-tf2-msgs \
+    tmux screen \
+    ros-humble-mavros \
+    ros-humble-mavros-extras
+
+ENV PATH="/home/${USERNAME}/.local/bin:${PATH}"

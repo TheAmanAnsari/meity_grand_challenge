@@ -48,6 +48,10 @@ docker run hello-world
 For other operating systems, or if you'd rather follow the official guide,
 see [docs.docker.com/engine/install](https://docs.docker.com/engine/install/).
 
+## Install nvidia container runtime (optional, but recommended)
+Installing this will allow for rendering of simulations with the dedicated nvidia graphics card if present, speeding up simulations by a large factor.
+Follow the guide here https://developer.nvidia.com/nvidia-container-runtime
+
 ## Getting started
 
 Clone this repo first, either way:
@@ -74,20 +78,6 @@ You can then use either of the two paths below — pick whichever fits how you w
 3. Run `./start_container.sh` again from a second terminal any time you want
    another shell inside the same environment.
 
-### Setup (VS Code)
-
-1. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-   extension in VS Code.
-2. Open the cloned folder in VS Code:
-   ```bash
-   code .
-   ```
-3. Click **Reopen in Container** when prompted (or Command Palette →
-   **Dev Containers: Reopen in Container**).
-4. VS Code pulls the pre-built image and sets up the workspace automatically.
-   This takes a few minutes on the first run (downloading the image), and
-   seconds on every run after that.
-5. Use the integrated terminal inside VS Code for everything from here on.
 
 ## Running a simulation
 
@@ -98,25 +88,10 @@ With the environment up, from your host terminal:
 ./run_sim.sh scenarios/forest_static.yaml # specific scenario
 ```
 
-If you're working inside a VS Code integrated terminal instead, run it
-directly:
-
-```bash
-cd uavsim
-./bin/uavsim up scenarios/forest_rescue.yaml
-```
-
 To stop a running simulation:
 
 ```bash
 ./stop_sim.sh                              # default scenario
 ./stop_sim.sh scenarios/forest_static.yaml # specific scenario
-```
-
-or, from inside the container:
-
-```bash
-cd uavsim
-./bin/uavsim down scenarios/forest_rescue.yaml --gazebo
 ```
 
