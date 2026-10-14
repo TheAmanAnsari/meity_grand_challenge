@@ -92,3 +92,6 @@ To stop a running simulation:
 ./stop_sim.sh                                   # default scenario
 ```
 
+## Docs
+
+Please refer to the Documentation section in [uavsim](https://github.com/NirmanJaiswal36/uavsim) for the detailed instructions about the challenge. 
