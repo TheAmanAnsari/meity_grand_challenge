@@ -1,0 +1,11 @@
+# This file should be used to define the parameters for your tests.
+# In the evaluation process, we will modify the following parameters/configurations that will be used during the evaluation process.
+
+# Following parameters must be incorporated in your developed code/algorithm/script.
+
+R_SAFE: 20               # meters (min. inter-UAV distance)
+
+R_COMM: 50               # meters (max. distance for communicating target points between UAVs and GCS)
+
+T_MAX_BATTERY: 20        # minutes (max. battery time for UAVs)
+
