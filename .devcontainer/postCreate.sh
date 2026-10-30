@@ -13,3 +13,4 @@ cmake -B "${UAVSIM_DIR}/build" -S "${UAVSIM_DIR}/gz_plugins"
 cmake --build "${UAVSIM_DIR}/build" -j"$(nproc)"
 
 echo "=== [postCreate] Setup complete ==="
+

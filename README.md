@@ -19,7 +19,7 @@ stop_sim.sh           stop a scenario
 
 ## Requirements
 
-- Ubuntu 22.04 LTS (recommended, tested)
+- Ubuntu 22.04 LTS or latest (recommended, tested)
 - Docker Engine, installed and running
 - About 10 to 20 GB free disk space
 - An internet connection for the first run, to pull the image

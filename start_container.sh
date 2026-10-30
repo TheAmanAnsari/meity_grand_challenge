@@ -20,7 +20,6 @@ else
     echo "Creating container '${CONTAINER_NAME}' from image '${IMAGE_NAME}'..."
     docker run -it \
         --name "${CONTAINER_NAME}" \
-        --privileged \
         --network host \
         --gpus all \
         -e DISPLAY="${DISPLAY}" \

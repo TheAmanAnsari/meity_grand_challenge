@@ -2,7 +2,7 @@
   "name": "humble desktop",
   "image": "theamanansari/meity-uav-challenge:latest",
   "runArgs": [
-    "--privileged",
+    // "--privileged",
     "--network=host",
     "--gpus=all"
   ],
