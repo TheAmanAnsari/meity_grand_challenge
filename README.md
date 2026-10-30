@@ -48,9 +48,9 @@ docker run hello-world
 For other operating systems, or if you'd rather follow the official guide,
 see [docs.docker.com/engine/install](https://docs.docker.com/engine/install/).
 
-## Install nvidia container runtime (optional, but recommended)
+## Install nvidia container toolkit (optional, but recommended)
 Installing this will allow for rendering of simulations with the dedicated nvidia graphics card if present, speeding up simulations by a large factor.
-Follow the guide here https://developer.nvidia.com/nvidia-container-runtime
+Follow the guide here https://github.com/NVIDIA/nvidia-container-toolkit
 
 ## Getting started
 
